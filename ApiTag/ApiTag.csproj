@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Controllers\RequestManager\IRequestManager.cs" />
     <Compile Include="Controllers\RequestManager\RequestManager.cs" />
+    <Compile Include="Models\Ligne.cs" />
     <Compile Include="Models\Station.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

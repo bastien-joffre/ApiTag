@@ -22,7 +22,7 @@ namespace ApiTag
             string json = requestManager.getStationsByRadius(x, y, dist);
             Console.WriteLine(json);
 
-            List<Station> stationsRaw = JsonConvert.DeserializeObject<List<Station>>(json);
+            List<Station> stationsRaw = requestManager.deserializeJson<Station>(json);
 
             Dictionary<string, List<Station>> stations = new Dictionary<string, List<Station>>();
 
@@ -46,21 +46,6 @@ namespace ApiTag
                     Console.WriteLine(station);
                 }
             }
-
-            //foreach (Station station in stationsRaw)
-            //{
-            //    bool duplicate = false;
-            //    foreach (string stationName in stations.Select(el => el.name))
-            //    {
-            //        if (station.name == stationName) duplicate = true;
-            //    }
-            //    if (!duplicate) stations.Add(station);
-            //}
-
-            //foreach (Station station in stations)
-            //{
-            //    Console.WriteLine(station);
-            //}
         }
     }
 }

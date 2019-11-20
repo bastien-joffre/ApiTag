@@ -9,5 +9,7 @@ namespace ApiTag
     interface IRequestManager
     {
         string getStationsByRadius(string x, string y, int radius);
+
+        List<T> deserializeJson<T>(string json);
     }
 }
