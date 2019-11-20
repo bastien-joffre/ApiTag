@@ -8,6 +8,6 @@ namespace ApiTag
 {
     interface IRequestManager
     {
-        string getLinesByRadius(string x, string y, int radius);
+        string getStationsByRadius(string x, string y, int radius);
     }
 }

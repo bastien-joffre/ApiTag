@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace ApiTag
 {
@@ -18,7 +19,48 @@ namespace ApiTag
             int dist = 500;
 
             IRequestManager requestManager = new RequestManager();
-            Console.WriteLine(requestManager.getLinesByRadius(x, y, dist));
+            string json = requestManager.getStationsByRadius(x, y, dist);
+            Console.WriteLine(json);
+
+            List<Station> stationsRaw = JsonConvert.DeserializeObject<List<Station>>(json);
+
+            Dictionary<string, List<Station>> stations = new Dictionary<string, List<Station>>();
+
+            foreach (Station station in stationsRaw)
+            {
+                if (!stations.ContainsKey(station.name))
+                {
+                    stations.Add(station.name, new List<Station>());
+                }
+                stations[station.name].Add(station);
+            }
+
+            foreach (KeyValuePair<string, List<Station>> kvp in stations)
+            {
+                Console.WriteLine(
+                    "______________________________\n\n" +
+                    $"Clé : {kvp.Key} !\n" +
+                    "______________________________\n");
+                foreach (Station station in kvp.Value)
+                {
+                    Console.WriteLine(station);
+                }
+            }
+
+            //foreach (Station station in stationsRaw)
+            //{
+            //    bool duplicate = false;
+            //    foreach (string stationName in stations.Select(el => el.name))
+            //    {
+            //        if (station.name == stationName) duplicate = true;
+            //    }
+            //    if (!duplicate) stations.Add(station);
+            //}
+
+            //foreach (Station station in stations)
+            //{
+            //    Console.WriteLine(station);
+            //}
         }
     }
 }

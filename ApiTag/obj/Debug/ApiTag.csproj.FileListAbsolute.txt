@@ -5,3 +5,6 @@ C:\Users\bastien.joffre\source\repos\ApiTag\ApiTag\obj\Debug\ApiTag.csprojAssemb
 C:\Users\bastien.joffre\source\repos\ApiTag\ApiTag\obj\Debug\ApiTag.csproj.CoreCompileInputs.cache
 C:\Users\bastien.joffre\source\repos\ApiTag\ApiTag\obj\Debug\ApiTag.exe
 C:\Users\bastien.joffre\source\repos\ApiTag\ApiTag\obj\Debug\ApiTag.pdb
+C:\Users\bastien.joffre\source\repos\ApiTag\ApiTag\obj\Debug\ApiTag.csproj.CopyComplete
+C:\Users\bastien.joffre\source\repos\ApiTag\ApiTag\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bastien.joffre\source\repos\ApiTag\ApiTag\bin\Debug\Newtonsoft.Json.xml

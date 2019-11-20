@@ -10,7 +10,7 @@ namespace ApiTag
 {
     public class RequestManager : IRequestManager
     {
-        public string getLinesByRadius(string x, string y, int radius)
+        public string getStationsByRadius(string x, string y, int radius)
         {
             string path = $"http://data.metromobilite.fr/api/linesNear/json?x={x}&y={y}&dist={radius}&details=true";
             WebRequest request = WebRequest.Create(path);
