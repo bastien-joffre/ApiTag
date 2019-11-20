@@ -1,0 +1,7 @@
+C:\Users\bastien.joffre\source\repos\ApiTag\ApiTag\bin\Debug\ApiTag.exe.config
+C:\Users\bastien.joffre\source\repos\ApiTag\ApiTag\bin\Debug\ApiTag.exe
+C:\Users\bastien.joffre\source\repos\ApiTag\ApiTag\bin\Debug\ApiTag.pdb
+C:\Users\bastien.joffre\source\repos\ApiTag\ApiTag\obj\Debug\ApiTag.csprojAssemblyReference.cache
+C:\Users\bastien.joffre\source\repos\ApiTag\ApiTag\obj\Debug\ApiTag.csproj.CoreCompileInputs.cache
+C:\Users\bastien.joffre\source\repos\ApiTag\ApiTag\obj\Debug\ApiTag.exe
+C:\Users\bastien.joffre\source\repos\ApiTag\ApiTag\obj\Debug\ApiTag.pdb
